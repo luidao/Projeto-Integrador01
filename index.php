@@ -3,8 +3,8 @@ include_once('header.php');
 ?>
 <main>
     <div class="page-header">
-        <h1>loja</h1>
-        <p>aluguel de ferramentas</p>
+        <h1>Ferr</h1>
+        <h3>Aluguel de ferramentas, de forma fácil e 100% online.</h3>
     </div>
     <div>
         <div class="col-sm-2">
@@ -39,15 +39,15 @@ include_once('header.php');
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="" alt="">
+                    <img src="imagens/material.jpg" alt="Materiais de Construção">
                 </div>
 
                 <div class="item">
-                    <img src="" alt="">
+                    <img src="imagens/materiais2.png" alt="Materiais de Contrução">
                 </div>
 
                 <div class="item">
-                    <img src="" alt="">
+                    <img src="imagens/varejo.jpg" alt="Varejo de materiais">
                 </div>
             </div>
 
