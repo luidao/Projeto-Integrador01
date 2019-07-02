@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+header {
+    width: 1305px;
+    color: #A9A9A9;
+    background-color:#C0C0C0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #f2f2f2;
+  }
+.page-header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+button.btn.btn-default.navbar-btn {
+    display: flex;
+    
+}
+.list-group {
+    width: 200px;
+    /* height: 400px; */
+    float: left;
+}
+
+#myCarousel {
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#prop {
+    height: 219px;
+    margin: 0%;
+    padding: 10px;
+    margin-top: 0;
+}
