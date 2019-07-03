@@ -1,6 +1,8 @@
-<?php 
+<?php
 include_once('header.php');
 ?>
+
+
 
 <div class="container">
     <div class="row">
@@ -19,83 +21,91 @@ include_once('header.php');
                     <tr>
                         <td class="col-sm-8 col-md-6">
                         <div class="media">
-                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="imagens/andaime.jpg" style="width: 72px; height: 72px;"> </a>
                             <div class="media-body">
-                                <h4 class="media-heading"><a href="#">Product name</a></h4>
-                                <h5 class="media-heading"> by <a href="#">Brand name</a></h5>
-                                <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
+                                <h4 class="media-heading"><a href="pg_produto.php">Andaime</a></h4>
+                                <h5 class="media-heading"> by <a href="#"><strong>Leroy Merlim</strong></a></h5>
+                                <span>Status: </span><span class="text-success"><strong>Em estoque</strong></span>
                             </div>
                         </div></td>
                         <td class="col-sm-1 col-md-1" style="text-align: center">
                         <input type="email" class="form-control" id="exampleInputEmail1" value="3">
                         </td>
-                        <td class="col-sm-1 col-md-1 text-center"><strong>$4.87</strong></td>
-                        <td class="col-sm-1 col-md-1 text-center"><strong>$14.61</strong></td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>R$400.87</strong></td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>$1202.61</strong></td>
                         <td class="col-sm-1 col-md-1">
                         <button type="button" class="btn btn-danger">
-                            <span class="glyphicon glyphicon-remove"></span> Remove
+                            <span class="glyphicon glyphicon-remove"></span> Remover
                         </button></td>
                     </tr>
                     <tr>
                         <td class="col-md-6">
                         <div class="media">
-                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="imagens/pincel.jpg" style="width: 72px; height: 72px;"> </a>
                             <div class="media-body">
-                                <h4 class="media-heading"><a href="#">Product name</a></h4>
-                                <h5 class="media-heading"> by <a href="#">Brand name</a></h5>
-                                <span>Status: </span><span class="text-warning"><strong>Leaves warehouse in 2 - 3 weeks</strong></span>
+                                <h4 class="media-heading"><a href="#">Pincel</a></h4>
+                                <h5 class="media-heading"> by <a href="#"><strong>Tigre</strong></a></h5>
+                                <span>Status: </span><span class="text-success"><strong>Em estoque</strong></span>
                             </div>
                         </div></td>
                         <td class="col-md-1" style="text-align: center">
                         <input type="email" class="form-control" id="exampleInputEmail1" value="2">
                         </td>
-                        <td class="col-md-1 text-center"><strong>$4.99</strong></td>
-                        <td class="col-md-1 text-center"><strong>$9.98</strong></td>
+                        <td class="col-md-1 text-center"><strong>R$24.99</strong></td>
+                        <td class="col-md-1 text-center"><strong>R$49.98</strong></td>
                         <td class="col-md-1">
                         <button type="button" class="btn btn-danger">
-                            <span class="glyphicon glyphicon-remove"></span> Remove
+                            <span class="glyphicon glyphicon-remove"></span> Remover
                         </button></td>
                     </tr>
                     <tr>
-                        <td>   </td>
-                        <td>   </td>
-                        <td>   </td>
-                        <td>   </td>
-                        <td><h5>Subtotal</h5></td>
-                        <td class="text-right"><h5><strong>$24.59</strong></h5></td>
+                        <td class="col-md-6">
+                        <div class="media">
+                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="imagens/escada.jpg" style="width: 72px; height: 72px;"> </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">Escada</a></h4>
+                                <h5 class="media-heading"> by <a href="#"><strong>Tigre</strong></a></h5>
+                                <span>Status: </span><span class="text-success"><strong>Em estoque</strong></span>
+                            </div>
+                        </div></td>
+                        <td class="col-md-1" style="text-align: center">
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="0">
+                        </td>
+                        <td class="col-md-1 text-center"><strong>R$214.99</strong></td>
+                        <td class="col-md-1 text-center"><strong>R$00.00</strong></td>
+                        <td class="col-md-1">
+                        <button type="button" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove"></span> Remover
+                        </button></td>
                     </tr>
+                </tbody>
+                <tfoot>
                     <tr>
                         <td>   </td>
                         <td>   </td>
                         <td>   </td>
-                        <td><h5>Estimated shipping</h5></td>
-                        <td class="text-right"><h5><strong>$6.94</strong></h5></td>
+                        <td><h5>Subtotal<br>Estimated shipping</h5><h3>Total</h3></td>
+                        <td class="text-right"><h5><strong>R$1,252.59<br>R$60.94</strong></h5><h3>$1,313.53</h3></td>
                     </tr>
                     <tr>
                         <td>   </td>
-                        <td>   </td>
-                        <td>   </td>
-                        <td><h3>Total</h3></td>
-                        <td class="text-right"><h3><strong>$31.53</strong></h3></td>
-                    </tr>
-                    <tr>
                         <td>   </td>
                         <td>   </td>
                         <td>
                         <button type="button" class="btn btn-default">
-                            <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Continuar Comprando
                         </button></td>
                         <td>
                         <button type="button" class="btn btn-success">
-                            Checkout <span class="glyphicon glyphicon-play"></span>
+                            Finalizar Compra <span class="glyphicon glyphicon-play"></span>
                         </button></td>
                     </tr>
-                </tbody>
+                </tfoot>
             </table>
         </div>
     </div>
 </div>
 
-<?php 
+<?php
 include_once('footer.php');
 ?>

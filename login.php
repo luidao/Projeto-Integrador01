@@ -12,16 +12,16 @@ include_once('header.php');
       <img src="imagens/ferr-logo.png" id="icon" alt="User Icon" />
     </div>
 
-    <!-- Login Form -->
+    <!-- Login  -->
     <form>
       <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
       <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
       <input type="submit" class="fadeIn fourth" value="Log In">
     </form>
 
-    <!-- Remind Passowrd -->
+    <!--  Passowrd -->
     <div id="formFooter">
-      <a class="underlineHover" href="#">Forgot Password?</a>
+      <a class="underlineHover" href="#">Esqueceu a senha?</a>
     </div>
 
   </div>
