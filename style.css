@@ -2,7 +2,7 @@
     box-sizing: border-box;
     font-size: 15px;
 }
-
+/* 
 header {
     width: 1305px;
     color: #A9A9A9;
@@ -32,6 +32,12 @@ body {
 button.btn.btn-default.navbar-btn {
     display: flex;
 
+} */
+
+.page-header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 .list-group {

@@ -7,8 +7,8 @@ include_once('header.php');
     <div class="content-wrapper">
         <div class="item-container">
             <div class="container">
-                <div class="col-md-12">
-                    <div class="product col-md-5 service-image-left">
+                <div class="col-md-6">
+                    <div class="product col-md-10 service-image-left">
 
                         <center>
                             <img id="item-display" src="imagens/andaime2.jpg" alt="Andaime de alumínio">
@@ -30,7 +30,8 @@ include_once('header.php');
                     </div> -->
                 </div>
 
-                <div class="col-md-7">
+                <div class="col-md-6">
+                    <div class="description">
                     <div class="product-title">Andaime Tubular Alumínio</div>
                     <div class="product-desc">Andaime desmontável para construção civil.</div>
                     <div class="product-rating"><i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star-o"></i> </div>
@@ -38,21 +39,22 @@ include_once('header.php');
                     <div class="product-price">R$ 400.87</div>
                     <div class="product-stock">Em estoque</div>
                     <hr>
+                    <div class="btn-group wishlist">
+                        <button type="button" class="btn btn-danger">
+                            Alugar
+                        </button>
+                    </div>
+                    </div>
                     <div class="btn-group cart">
                         <button type="button" class="btn btn-success">
                             Adicionar ao carrinho
-                        </button>
-                    </div>
-                    <div class="btn-group wishlist">
-                        <button type="button" class="btn btn-danger">
-                            Lista de desejos
                         </button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container-fluid">
-            <div class="col-md-12 product-info">
+            <div class="col-md-6 product-info">
                 <ul id="myTab" class="nav nav-tabs nav_tabs">
 
                     <li class="active"><a href="#service-one" data-toggle="tab">DESCRIÇÃO</a></li>
@@ -104,6 +106,27 @@ include_once('header.php');
             </div>
         </div>
     </div>
+
+    <style>
+    .btn-group .wishlist {
+        background-color: blue;
+    }
+    #item-display {
+        background-color: blue;
+    }
+    .col-md-6 {
+        max-width: 760px;
+    
+    }
+    .btn-group.wishlist {
+        margin: 7px 0px;
+        width: 100px;
+
+    }
+    center {
+        max-width: 760px;
+    }
+    </style>
 
     <?php
     include_once('footer.php');
