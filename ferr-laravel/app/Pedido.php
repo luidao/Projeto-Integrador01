@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class pedido extends Model
+class Pedido extends Model
 {
     //
 }
