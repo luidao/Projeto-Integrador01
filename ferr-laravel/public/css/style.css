@@ -28,6 +28,9 @@ header nav ul li a {
     background-color: #3F51B5;
 }
 
+.produtos .card{
+    margin-bottom: 20px;
+}
 .produtos .card .img-thumbnail {
     width: 200px;
 }
