@@ -4,7 +4,7 @@
     Produtos
 @endsection
 
-@section('conteudo')
+@section('content')
 <div class="container">
     <div class="row">
         <div class="col mb-5 mt-5">
