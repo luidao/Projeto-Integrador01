@@ -12,22 +12,27 @@
 */
 
 
-Route::get('/home', function () {
-    return view('index');
-});
+// Route::get('/', 'HomeController@home');
 
 Route::get('/sobre', function () {
     return view('sobre');
 });
 
-Route::get('/produtos', function () {
-    return view('produtos');
-});
+Route::get('/produtos', 'ProdutosController@produtos');
 
 Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/logout', function () {
+    return view('logout');
+});
 
 
 
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/produtos', 'ProdutosController@listarProdutos');
