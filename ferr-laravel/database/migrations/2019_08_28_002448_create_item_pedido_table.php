@@ -16,10 +16,12 @@ class CreateItemPedidoTable extends Migration
         Schema::create('item_pedido', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('fk_produto');
+            $table->unsignedBigInteger('fk_pedido');
             $table->integer('quantidade');
             $table->timestamps();
             
             $table->foreign('fk_produto')->references('id')->on('produto');
+            $table->foreign('fk_pedido')->references('id')->on('pedido');
         });
     }
 
