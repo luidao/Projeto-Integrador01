@@ -1,0 +1,33 @@
+*{
+    box-sizing: none;
+}
+:root {
+    --blue: #3F51B5;
+    --primary: #3F51B5;
+    --info: #3F51B5;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header nav {
+    background-color: #fff;
+    box-shadow: 0 0 10px -5px rgba(0,0,0,0.4);
+}
+
+header nav .navbar-brand img{
+    height: 50px;
+}
+
+header nav ul li a {
+    text-transform: uppercase;
+}
+.btn-primary{
+    background-color: #3F51B5;
+}
+
+.produtos .card .img-thumbnail {
+    width: 200px;
+}
