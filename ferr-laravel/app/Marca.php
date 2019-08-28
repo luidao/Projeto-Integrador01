@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class item_marca extends Model
+class Marca extends Model
 {
     //
 }
