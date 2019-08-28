@@ -30,7 +30,7 @@ Inicio
         </a>
     </div>
 
-    <div class="categorias d-flex ">
+    <div class="categorias d-flex">
         <a class="btn btn-primary p-2 flex-fill" href="/produtos/categoria/id">Carpintaria</a>
         <a class="btn btn-primary p-2 flex-fill" href="/produtos/categoria/id">Demolição</a>
         <a class="btn btn-primary p-2 flex-fill" href="/produtos/categoria/id">Jardinagem</a>
