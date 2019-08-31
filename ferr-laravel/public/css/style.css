@@ -10,6 +10,7 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: #f0efef;
 }
 
 header nav {
@@ -33,4 +34,27 @@ header nav ul li a {
 }
 .produtos .card .img-thumbnail {
     width: 200px;
+}
+.carousel {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #979a9c;
+    border-color: #6d6d6e;
+}
+.btn-primary  {
+	background-color:#979a9c;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:10px 16px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #414244;
+    position: relative;
+    border-color: #6d6d6e;
+}
+.btn-primary:hover {
+	background-color:#6d6d6e;
 }
