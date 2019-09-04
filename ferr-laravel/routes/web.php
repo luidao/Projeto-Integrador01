@@ -14,23 +14,23 @@
 
 // Route::get('/', 'HomeController@home');
 
+// use App\Http\Controllers\ProdutosController;
+
 Route::get('/sobre', function () {
     return view('sobre');
 });
-
-Route::get('/produtos', 'ProdutosController@produtos');
 
 Route::get('/login', function () {
     return view('login');
 });
 
 Route::get('/logout', function () {
-    return view('logout');
+    return view('logout'); 
 });
 
 
-
-
+Route::get('/produtos/{id}','ProdutosController@detalheProduto');
+Route::get('/produtos/categoria/{id}', 'ProdutosController@filtrarCategoria');
 
 Auth::routes();
 

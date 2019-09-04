@@ -44,11 +44,11 @@
     </div>
 
     <div class="categorias d-flex">
-        <a class="btn btn-primary p-2 flex-fill" href="/produtos/categoria/id">Carpintaria</a>
-        <a class="btn btn-primary p-2 flex-fill" href="/produtos/categoria/id">Demolição</a>
-        <a class="btn btn-primary p-2 flex-fill" href="/produtos/categoria/id">Jardinagem</a>
-        <a class="btn btn-primary p-2 flex-fill" href="/produtos/categoria/id">Limpeza</a>
-        <a class="btn btn-primary p-2 flex-fill" href="/produtos/categoria/id">Cortes</a>
+            @if(isset ($categorias))
+                @foreach($categorias as $categoria)
+        <a class="btn flex-fill" href="/produtos/categoria/{{ $categoria->id_categoria }}">{{ $categoria->nome }}</a>
+        @endforeach
+        @endif
     </div>
     <h1 class="mt-5">PRINCIPAIS PRODUTOS</h1>
     
