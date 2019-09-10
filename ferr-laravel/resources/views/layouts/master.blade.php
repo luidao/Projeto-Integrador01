@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-eigen">
             <div class="container">
                 <a class="navbar-brand" href="/home">
-                    <img src="images/Ferr-logo.png" alt="">
+                    <img src="/images/Ferr-logo.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

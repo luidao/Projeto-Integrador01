@@ -31,4 +31,5 @@
         <img src="Images/banner3.jpg" class="img-full" alt="">
     </div>
 </section>
+@include('layouts.footer')
 @stop

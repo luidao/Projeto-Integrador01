@@ -25,4 +25,5 @@ Sobre
     <p>Oferecemos ferramentas para que o cliente possa fazer o tracking do equipamento solicitado, do início ao final da compra, possibilitando, também, a oportunidade de extensão do empréstimo.</p>
 </div>
 </div>
+@include('layouts.footer')
 @endsection
