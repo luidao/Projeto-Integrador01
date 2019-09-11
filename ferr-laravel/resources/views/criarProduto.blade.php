@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Novo produto')
+@section('title', 'Nova Ferramenta')
 
 @section('content')
 <section id="produtos" class="new-products mt-5">
@@ -28,22 +28,18 @@
                             @endif
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="editora">editora</label>
-                        <select class="form-control" name="editora" id="editora">
-                            <option selected disabled>Selecione uma opção</option>
-
-                            @if(isset($editoras))
-                            @foreach($editoras as $editora)
-                                <option value="{{ $editora->id_editora }}">{{ $editora->nome }}</option>
-                            @endforeach
-                            @endif
-                        </select>
-                    </div>
                 
                     <div class="form-group">
                         <label for="preco">preço</label>
                         <input type="number" name="preco" id="preco" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="preco">marca</label>
+                        <input type="text" name="marca" id="marca" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="preco">quantidade</label>
+                        <input type="number" name="quantidade" id="quantidade" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="descricao">descrição</label>

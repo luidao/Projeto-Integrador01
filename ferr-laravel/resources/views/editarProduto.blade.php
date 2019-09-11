@@ -30,19 +30,7 @@
                         @endif
                     </select>
                 </div>
-                <div class="form-group">
-                    <label for="editora">editora</label>
-                    <select class="form-control" name="editora" id="editora">
-                        <option selected disabled>Selecione uma opção</option>
-
-                        @if(isset($editoras))
-                        @foreach($editoras as $editora)
-                        <option value="{{ $editora->id_editora }}" {{($editora->id_editora == $produto->fk_editora) ? 'selected' : ''}}>{{ $editora->nome }}</option>
-                        @endforeach
-                        @endif
-                    </select>
-                </div>
-
+                
                 <div class="form-group">
                     <label for="preco">preço</label>
                     <input type="number" name="preco" id="preco" class="form-control" value="{{ $produto->preco }}">
