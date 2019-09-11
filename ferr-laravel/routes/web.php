@@ -16,6 +16,10 @@
 
 // use App\Http\Controllers\ProdutosController;
 
+use Illuminate\Http\Request;
+use Psy\CodeCleaner\FunctionReturnInWriteContextPass;
+use Illuminate\Support\Facades\Route;
+
 Route::get('/sobre', function () {
     return view('sobre');
 });
@@ -28,6 +32,9 @@ Route::get('/logout', function () {
     return view('logout'); 
 });
 
+Route::get('/admin', function () {
+    return view('admin');
+});
 
 Route::get('/produtos/{id}','ProdutosController@detalheProduto');
 Route::get('/produtos/categoria/{id}', 'ProdutosController@filtrarCategoria');
@@ -36,3 +43,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/produtos', 'ProdutosController@listarProdutos');
+
+Route::get('/admin', 'AdminController@index');
+
+    Route::get('/admin/produtos/novo', 'AdminController@criarProduto');
+    Route::post('/admin/produtos/novo', 'AdminController@insertProduto');
+
+    Route::get('/admin/produtos/{id}', 'AdminController@editarProduto');
+    Route::post('/admin/produtos/{id}', 'AdminController@updateProduto');
+
+    Route::get('/admin/produtos/excluir/{id}', 'AdminController@excluirProduto');
+    Route::post('/admin/produtos/excluir/{id}', 'AdminController@deleteProduto');
