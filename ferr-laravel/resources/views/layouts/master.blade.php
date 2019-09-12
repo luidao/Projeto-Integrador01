@@ -30,7 +30,7 @@
                             <a class="nav-link" href="/home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/sobre">Sobre nós</a>
+                            <a class="nav-link" href="/sobre">Categorias</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/produtos">Produtos</a>
