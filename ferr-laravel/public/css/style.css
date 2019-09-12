@@ -12,9 +12,26 @@
 
 .banner1 {
     height: 100vh;
-    width: auto;
-    height: auto;
-    background-size: contain;
+    width: 100%;
+    background-size: cover;
+    background-image: url(/images/mtasferr.jpg);
+    background-position: center;
+}
+.col-sm {
+    background-image: url(/Images/ferramenta3.jpg);
+    width: 200px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.col-sm-6 {
+    background-image: url(/Images/fita.jpg);
+    width: 100px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
 }
 
 .carousel-item{
@@ -35,12 +52,20 @@ body {
     background-color: #16161d;
     color: white;
 }
+header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
-header nav {
+header nav.navbar {
     background-color: #16161d;
     box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.4);
-    position: sticky;
-    top: 0;
+    /* padding: 0; */
+        background-color: rgb(37, 37, 37, 0.95);
+        display: block;
+    
 }
 
 header nav .navbar-brand img {
@@ -57,13 +82,7 @@ a.nav-link:hover {
     border-bottom: 0.7px solid #fff;
     transition: 2s;
 }
-.navbar {
-    background-color: rgb(37, 37, 37, 0.7);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: block;
-}
+
 
 header li .nav-item .active {
     color: white;
@@ -164,13 +183,23 @@ li.nav-item {
 
 .text {
     position: absolute;
-    bottom: 340px;
-    background-color: rgba(46, 46, 46, 0.76);
+    top: 0;
+    left: 0;
+    background-color: rgba(46, 46, 46, 0.7);
     color: white;
-    margin: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    width: 100%;
     font-size: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-responsive {
+    max-width: 100%;
 }
 .h1, h1{
     font-size: 80px;
