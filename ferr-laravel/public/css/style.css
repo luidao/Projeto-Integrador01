@@ -17,22 +17,26 @@
     background-image: url(/images/mtasferr.jpg);
     background-position: center;
 }
-.col-sm {
+
+.categorias-img{
+    height: 350px;
+    width: 350px;
+}
+.imagem-home {
     background-image: url(/Images/ferramenta3.jpg);
     width: 200px;
     height: 400px;
     background-size: cover;
     background-position: center;
-
 }
 
-.col-sm-6 {
+/* .col-sm-6 {
     background-image: url(/Images/fita.jpg);
     width: 100px;
     height: 400px;
     background-size: cover;
     background-position: center;
-}
+} */
 
 .carousel-item{
     height: 75vh;

@@ -34,43 +34,50 @@
     <!-- <div class="col-12 col text-center"> -->
     @if(isset ($categorias))
     @foreach($categorias as $categoria)
-    <a class="btn col-lg-2 col-sm-12 my-2 flex-fill" href="/produtos/categoria/{{ $categoria->id_categoria }}">{{ $categoria->nome }}</a>
+    <a class="btn col-lg-2 col-sm-12 my-2 flex-fill"
+        href="/produtos/categoria/{{ $categoria->id_categoria }}">{{ $categoria->nome }}</a>
     @endforeach
     @endif
     <!-- </div> -->
 </div>
 <div class="container">
-    <h2 class="h1 mt-5">PRINCIPAIS PRODUTOS</h2>
-    <div class="row">
-        <div class="col-sm-4">
-
-        </div>
-    </div>
+    <h2 class="h1 mt-5">CATEGORIAS</h2>
 </div>
 
 
 <section id="story" class="second mt-5 mb-5">
     <div class="container text-center">
-        <div class="row">
+        <div class="row imagem">
             <div class="col-sm">
 
             </div>
-            
+
             <div class="clearfix"></div>
         </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-        
+        <div class="container">
+            <div class="row image-home">
+                @if(isset($categorias))
+                @foreach($categorias as $categoria)
+                <div class="col-lg-6">
+                    <div class="bannerCategoria" style="background-image: url({{ $imagemCategoria }})">
+                        <h1>{{ isset($nomeCategoria) ?  $nomeCategoria  : 'Todos os produtos' }}</h1>
                     </div>
-                        <div class="col-sm-6">
-        
-                        </div>
-                    </div>
+                    <p>{{$categoria->nome}}</p>
+                </div>
+                @endforeach
+                @endif
+            </div>
+        </div>
+    </div>
 
     </div>
 </section>
 
-<div class="container">
+<div class="col-lg-6 col-sm-12">
+
+</div>
+
+<!-- <div class="container">
     <section class="produtos d-flex flex-wrap justify-content-between mb-5">
 
         <div class="card mt-3">
@@ -97,11 +104,11 @@
 
                 <div class="col text-center">
                     <span class="alert alert-info">Nenhum produto para exibir</span>
-                </div>
+                </div> -->
 
-                @endif
+@endif
 
-    </section>
+</section>
 </div>
 
 @include('layouts.footer')

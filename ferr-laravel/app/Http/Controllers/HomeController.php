@@ -22,4 +22,14 @@ class HomeController extends Controller
         
         return view('home', compact('categorias', 'produtos'));
     }
+
+    public function filtrarCategoria(){
+        // $imagensCategorias = Categoria::find($id)->images;
+        $categorias = Categoria::all();
+        $imagemCategoria = Categoria::all();
+    
+
+        return view('home', compact('categorias', 'imagemCategoria'));
+
+    }
 }

@@ -43,6 +43,8 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@filtrarCategoria')->name('home');
+
 Route::get('/produtos', 'ProdutosController@listarProdutos');
 
 Route::get('/admin', 'AdminController@index');
