@@ -26,7 +26,6 @@ class AdminController extends Controller
     public function criarProduto(){
         $categorias = Categoria::all();
         
-
         return view('criarProduto', compact('categorias'));
     }
 
@@ -38,6 +37,7 @@ class AdminController extends Controller
         $produto->fk_categoria = $request->categoria;
         $produto->fk_marca = $request->marca;
         $produto->preco = $request->preco;
+        $produto->quantidade = $request->quantidade;
 
         $arquivo = $request->file('imagem');
         if (!empty($arquivo)) {
@@ -62,7 +62,6 @@ class AdminController extends Controller
 
         $produto = Produto::find($id);
         $categorias = Categoria::all();
-        
 
         return view('editarProduto', compact('produto', 'categorias'));
     }
@@ -75,6 +74,8 @@ class AdminController extends Controller
         $produto->fk_categoria = $request->categoria;
         $produto->fk_marca = $request->marca;
         $produto->preco = $request->preco;
+        $produto->quantidade = $request->quantidade;
+
 
         $arquivo = $request->file('imagem');
         if (!empty($arquivo)) {
