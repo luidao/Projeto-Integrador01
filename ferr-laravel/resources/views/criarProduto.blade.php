@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 mb-5">
-                <h1>Cadastrar novo produto</h1>
+                <h2>Cadastrar novo produto</h2>
                 <small>Insira as informações no formulário abaixo</small>
 
                 <form action="/admin/produtos/novo"  enctype="multipart/form-data" method="POST" class="mt-5">
@@ -28,27 +28,28 @@
                             @endif
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="editora">editora</label>
-                        <select class="form-control" name="editora" id="editora">
-                            <option selected disabled>Selecione uma opção</option>
-
-                            @if(isset($editoras))
-                            @foreach($editoras as $editora)
-                                <option value="{{ $editora->id_editora }}">{{ $editora->nome }}</option>
-                            @endforeach
-                            @endif
-                        </select>
-                    </div>
+                    
                 
                     <div class="form-group">
                         <label for="preco">preço</label>
                         <input type="number" name="preco" id="preco" class="form-control">
                     </div>
+
+                    <div class="form-group">
+                        <label for="descricao">marca</label>
+                        <input type="text" name="marca" id="marca" class="form-control">
+                    </div>
+
                     <div class="form-group">
                         <label for="descricao">descrição</label>
                         <textarea name="descricao" id="descricao" class="form-control" rows="2" ></textarea>
                     </div>
+
+                    <div class="form-group">
+                        <label for="preco">quantidade</label>
+                        <input type="quantidade" name="quantidade" id="quantidade" class="form-control">
+                    </div>
+
                     <div class="form-group">
                         <label for="imagem">foto do produto</label>
                         <input type='file' id="imagem" name="imagem" accept="image/*" class="form-control"/>
