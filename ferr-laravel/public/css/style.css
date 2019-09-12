@@ -37,26 +37,10 @@
     background-position: center;
 }
 
-/* .col-sm-6 {
-    background-image: url(/Images/fita.jpg);
-    width: 100px;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-} */
-
-.carousel-item{
-    height: 75vh;
-}
 html{
     scroll-behavior: smooth;
 }
-.carousel-caption{
-    background-color: #14141465;
-    max-width: 100%;
-    width:100%;
-    left: 0;
-}
+
 body {
     padding: 0%; 
     margin: 0%;
@@ -75,7 +59,7 @@ header nav.navbar {
     background-color: #16161d;
     box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.4);
     /* padding: 0; */
-        background-color: rgb(37, 37, 37, 0.95);
+        background-color: rgba(29, 28, 28, 0.95);
         display: block;
     
 }
@@ -112,25 +96,34 @@ li.nav-item {
     background-color: #252525;
 }
 
+.card-body {
+    margin: 0;
+    padding: 50px;
+    box-sizing: border-box;
+
+}
+.card-header {
+    position: relative;
+    
+}
 .produtos .card {
     margin-bottom: 20px;
+}
+.card-img-top {
+    width: 300px;
+    height: 250px;
+
 }
 
 .jumbotron {
     background-color: #252525;
     margin-top: 30px;
+    padding: 30px;
 }
 
 
 .produtos .card .img-thumbnail {
     width: 200px;
-}
-
-.carousel {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    background-color: #979a9c;
-    border-color: #6d6d6e;
 }
 
 .container-fluid{
@@ -416,4 +409,8 @@ ul.social-footer2 li a {
     height: 30px;
     width: 30px;
     text-align: center;
+}
+
+.pagination {
+  
 }
