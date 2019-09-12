@@ -56,7 +56,7 @@
                     @else
 
                     <div class="col text-center">
-                        <span class="alert alert-info">Nenhum produto para exibir</span>
+                        <span class="alert alert-info">Nenhum produto à exibir</span>
                     </div>
 
                     @endif

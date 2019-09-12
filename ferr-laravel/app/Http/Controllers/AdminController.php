@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Produto;
 use App\Categoria;
+use App\Marca;
 
 
 class AdminController extends Controller
@@ -19,14 +20,16 @@ class AdminController extends Controller
     {
         $produtos = Produto::all();
         $categorias = Categoria::all();
+        $marcas = Marca::all();
 
-        return view('admin', compact('produtos', 'categorias'));
+        return view('admin', compact('produtos', 'categorias', 'marcas'));
     }
 
     public function criarProduto(){
         $categorias = Categoria::all();
+        $marcas = Marca::all();
         
-        return view('criarProduto', compact('categorias'));
+        return view('criarProduto', compact('categorias', 'marcas'));
     }
 
     public function insertProduto(Request $request){ // $_POST
@@ -62,8 +65,9 @@ class AdminController extends Controller
 
         $produto = Produto::find($id);
         $categorias = Categoria::all();
+        $marcas = Marca::all();
 
-        return view('editarProduto', compact('produto', 'categorias'));
+        return view('editarProduto', compact('produto', 'categorias', 'marcas'));
     }
 
     public function updateProduto(Request $request, $id){

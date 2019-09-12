@@ -32,4 +32,14 @@ class ProdutosController extends Controller
         return view('produtos', compact('produtos', 'categorias','nomeCategoria', 'imagemCategoria'));
 
     }
+
+    public function filtrarMarca($id){
+        $marcas = Marca::all();
+        $nomeMarca = Marca::find($id)->nome;
+    
+        $produtos = Produto::where('fk_marca', '=', $id)->paginate(6);
+
+        return view('produtos', compact('produtos', 'marcas','nomeMarca'));
+
+    }
 }
