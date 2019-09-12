@@ -20,10 +20,6 @@
                     <input readonly disabled type="text" name="nome" id="nome" class="form-control" value="{{ $produto->categoria->nome }}">
                 </div>
                 <div class="form-group">
-                    <input readonly disabled type="text" name="nome" id="nome" class="form-control" value="{{ $produto->editora->nome }}">
-                </div>
-
-                <div class="form-group">
                     <input readonly disabled type="number" name="preco" id="preco" class="form-control" value="{{ $produto->preco }}">
                 </div>
                 <div class="form-group">
