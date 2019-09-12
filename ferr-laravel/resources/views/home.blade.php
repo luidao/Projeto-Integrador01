@@ -22,7 +22,7 @@
     </div> -->
 </div>
     <div class="text text-center">
-        <h1>Aluguel de ferramentas</h1>
+        <h3>Aluguel de ferramentas</h3>
         <p>É simples, rápido e totalmente online.</p>
     </div>
 
