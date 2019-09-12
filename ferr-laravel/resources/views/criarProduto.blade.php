@@ -23,7 +23,7 @@
 
                             @if(isset($categorias))
                             @foreach($categorias as $categoria)
-                                <option value="{{ $categoria->id_categoria }}">{{ $categoria->nome }}</option>
+                                <option value="{{ $categoria->id }}">{{ $categoria->nome }}</option>
                             @endforeach
                             @endif
                         </select>
@@ -47,7 +47,7 @@
 
                     <div class="form-group">
                         <label for="preco">quantidade</label>
-                        <input type="quantidade" name="quantidade" id="quantidade" class="form-control">
+                        <input type="number" name="quantidade" id="quantidade" class="form-control">
                     </div>
 
                     <div class="form-group">
