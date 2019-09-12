@@ -22,14 +22,15 @@ class ProdutosController extends Controller
     }
 
     public function filtrarCategoria($id){
-        // $imagensCategorias = Categoria::find($id)->images;
+        
+        $imagensCategorias = Categoria::find($id)->images;
         $categorias = Categoria::all();
         $nomeCategoria = Categoria::find($id)->nome;
         $imagemCategoria = Categoria::find($id)->images;
-    
+        
         $produtos = Produto::where('fk_categoria', '=', $id)->paginate(6);
-
-        return view('produtos', compact('produtos', 'categorias','nomeCategoria', 'imagemCategoria'));
+        
+        return view('produtos', compact('produtos', 'categorias', 'nomeCategoria', 'imagemCategoria'));
 
     }
 }

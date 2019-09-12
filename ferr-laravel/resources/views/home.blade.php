@@ -29,17 +29,6 @@
 <div class="banner1">
 </div>
 
-
-<div class="categorias row text-center">
-    <!-- <div class="col-12 col text-center"> -->
-    @if(isset ($categorias))
-    @foreach($categorias as $categoria)
-    <a class="btn col-lg-2 col-sm-12 my-2 flex-fill"
-        href="/produtos/categoria/{{ $categoria->id_categoria }}">{{ $categoria->nome }}</a>
-    @endforeach
-    @endif
-    <!-- </div> -->
-</div>
 <div class="container">
     <h2 class="h1 mt-5">CATEGORIAS</h2>
 </div>
@@ -59,10 +48,11 @@
                 @if(isset($categorias))
                 @foreach($categorias as $categoria)
                 <div class="col-lg-6">
-                    <div class="bannerCategoria" style="background-image: url({{ $imagemCategoria }})">
-                        <h1>{{ isset($nomeCategoria) ?  $nomeCategoria  : 'Todos os produtos' }}</h1>
-                    </div>
-                    <p>{{$categoria->nome}}</p>
+                    <a href="/produtos/categoria/{{ $categoria->id_categoria }}"><div class="bannerCategoria"  style="background-image: url({{ $categoria->images }})">
+                        <h1>{{ $categoria->nome }}</h1>
+                    </div></a>
+                    
+                    <!-- <p>{{$categoria->nome}}</p> -->
                 </div>
                 @endforeach
                 @endif
@@ -74,39 +64,19 @@
 </section>
 
 <div class="col-lg-6 col-sm-12">
-
 </div>
 
-<!-- <div class="container">
-    <section class="produtos d-flex flex-wrap justify-content-between mb-5">
 
-        <div class="card mt-3">
-            <div class="row">
-                @if(isset($produtos) && count($produtos) > 0)
+<div class="banner2">
+    <div class="text2 text-center">
+        <h1>É simples.</h1>
+        <br>
+        <h2>Nós fazemos todo o trabalho duro</h3>
+        <p>Para que você trabalhe duro.</p>
+    </div>
+    
+</div>
 
-                @foreach($produtos as $produto)
-                <div class="itens col-sm-12 col-lg-4 my-4">
-                    <div class="card">
-                        <img class="card-img-top" src="{{ $produto['imagem'] }}" width="320px" height="auto
-                            " alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">{{ $produto['nome'] }}</h5>
-                            <ul class="list-group list-group-flush text-center">
-                                <li class="list-group-item"><strong>R$ {{ $produto['preco'] }}</strong></li>
-                            </ul>
-                            <a href="/produtos/{{ $produto->id }}" class="d-flex btn btn-primary my-3 justify-content-center alugar">Alugar</a>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-
-                @else
-
-                <div class="col text-center">
-                    <span class="alert alert-info">Nenhum produto para exibir</span>
-                </div> -->
-
-@endif
 
 </section>
 </div>
