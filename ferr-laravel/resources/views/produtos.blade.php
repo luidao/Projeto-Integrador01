@@ -12,7 +12,7 @@
             <div class="categorias d-flex btn-group">
                 @if(isset ($categorias))
                 @foreach($categorias as $categoria)
-                <a class="btn flex-fill {{ $categoria->nome == $nomeCategoria ? 'active' : '' }}" href="/produtos/categoria/{{ $categoria->id_categoria }}">{{ $categoria->nome }}</a>
+                <a class="btn flex-fill {{ $categoria->nome == $nomeCategoria ? 'active' : '' }}" href="/produtos/categoria/{{ $categoria->id }}">{{ $categoria->nome }}</a>
                 @endforeach
                 @endif
             </div>

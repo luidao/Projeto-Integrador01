@@ -48,7 +48,7 @@
                 @if(isset($categorias))
                 @foreach($categorias as $categoria)
                 <div class="col-lg-6">
-                    <a class="nav-link" href="/produtos/categoria/{{ $categoria->id_categoria }}"><div class="bannerCategoria"  style="background-image: url({{ $categoria->images }})">
+                    <a class="nav-link" href="/produtos/categoria/{{ $categoria->id }}"><div class="bannerCategoria"  style="background-image: url({{ $categoria->images }})">
                         <h1>{{ $categoria->nome }}</h1>
                     </div></a>
                     
