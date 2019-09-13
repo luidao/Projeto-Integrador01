@@ -24,7 +24,7 @@
           <input type="password" name="senha" class="form-control col-sm-4" value="">   
         </div>
 
-        <button type="button" class="btn btn-primary" name="button">Enviar</button>
+        <button type="button" class="btn" name="button">Enviar</button>
   </form>
 
     <!--  Passowrd -->

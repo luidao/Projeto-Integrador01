@@ -4,6 +4,7 @@
 
 @section('content')
 
+<div class="princi" id="princi">
 
 <div class="container">
     <div class="row">
@@ -44,13 +45,13 @@
                                 <ul class="list-group list-group-flush text-center">
                                     <li class="list-group-item"><strong>R$ {{ $produto['preco'] }} </strong></li>
                                 </ul>
-                                <a href="/produtos/{{ $produto->id }}" class="d-flex btn btn-primary my-3 justify-content-center alugar">Alugar</a>
+                                <a href="/produtos/{{ $produto->id }}" class="d-flex btn  my-3 justify-content-center alugar nav-link">Alugar</a>
                             </div>
                         </div>
                     </div>
                     @endforeach
 
-                    <div class="col-lg-12">
+                    <div class="col-lg-2 m-auto">
                         {{ $produtos->links() }}
                     </div>
                     @else
@@ -66,6 +67,7 @@
     </div>
 </section>
 
+</div>
 </div>
 @include('layouts.footer')
 @stop

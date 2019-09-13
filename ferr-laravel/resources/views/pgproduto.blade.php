@@ -4,6 +4,7 @@
 @section('title', 'Ferramenta')
 
 @section('content')
+<div class="princi" id="princi">
 <section id="produtos" class="new-products mt-5">
     <div class="container">
         <div class="row">
@@ -19,7 +20,7 @@
                     <ul class="list-group list-group-flush text-center">
                         <li class="list-group-item"><strong>R$ {{ $produto->preco }}</strong></li>
                     </ul>
-                    <a href="#" class="d-flex btn btn-primary my-3 justify-content-center alugar">Alugue</a>
+                    <a href="#" class="d-flex btn my-3 justify-content-center alugar">Alugue</a>
                 </div>
             </div>
         </div>
@@ -31,5 +32,6 @@
         <img src="Images/banner3.jpg" class="img-full" alt="">
     </div>
 </section>
+</div>
 @include('layouts.footer')
 @stop

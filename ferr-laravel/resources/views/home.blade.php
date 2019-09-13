@@ -22,8 +22,8 @@
     </div> -->
 </div>
 <div class="text text-center">
-    <h1>Aluguel de ferramentas</h1>
-    <p>É simples, rápido e totalmente online.</p>
+    <h1>Aluguel de <span class="laranj">ferramentas</span></h1> 
+    <p>É <span class="laranj">simples</span>, <span class="laranj">rápido</span> e totalmente <span class="laranj">online</span>.</p>
 </div>
 
 <div class="banner1">
@@ -48,7 +48,7 @@
                 @if(isset($categorias))
                 @foreach($categorias as $categoria)
                 <div class="col-lg-6">
-                    <a href="/produtos/categoria/{{ $categoria->id_categoria }}"><div class="bannerCategoria"  style="background-image: url({{ $categoria->images }})">
+                    <a class="nav-link" href="/produtos/categoria/{{ $categoria->id_categoria }}"><div class="bannerCategoria"  style="background-image: url({{ $categoria->images }})">
                         <h1>{{ $categoria->nome }}</h1>
                     </div></a>
                     
@@ -69,10 +69,10 @@
 
 <div class="banner2">
     <div class="text2 text-center">
-        <h1>É simples.</h1>
+        <h1>É <span class="laranj">simples</span>.</h1>
         <br>
         <h2>Nós fazemos todo o trabalho duro</h3>
-        <p>Para que você trabalhe duro.</p>
+        <p>Para que você <span class="laranj">trabalhe duro</span>.</p>
     </div>
     
 </div>

@@ -35,12 +35,14 @@ class AdminController extends Controller
     public function insertProduto(Request $request){ // $_POST
         $produto = new Produto();
 
+        dd($request);
         $produto->nome = $request->nome;
         $produto->descricao = $request->descricao;
         $produto->fk_categoria = $request->categoria;
         $produto->fk_marca = $request->marca;
         $produto->preco = $request->preco;
         $produto->quantidade = $request->quantidade;
+
 
         $arquivo = $request->file('imagem');
         if (!empty($arquivo)) {

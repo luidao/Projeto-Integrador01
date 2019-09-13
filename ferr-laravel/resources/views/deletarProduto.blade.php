@@ -40,7 +40,7 @@
 @else
 <section class="container mt-5">
     <div class="alert alert-danger mt-5">Produto não encontrado</div>
-    <a href="/admin" class="btn btn-primary">voltar</a>
+    <a href="/admin" class="btn">voltar</a>
 </section>
 @endif
 @stop

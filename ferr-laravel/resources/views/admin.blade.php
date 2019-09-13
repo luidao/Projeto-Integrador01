@@ -18,7 +18,7 @@
             
             <div class="col">
                 <h2>Produtos
-                <a href="/admin/produtos/novo" class="btn btn-primary mb-2">Novo produto</a>
+                <a href="/admin/produtos/novo" class="btn mb-2">Novo produto</a>
                 </h2>
                 <table class="table">
                     <thead>
@@ -43,8 +43,8 @@
                                 <a href="/admin/produtos/{{$produto->id_produto}}">{{$produto->categoria->nome}}</a>
                             </td>
                             <td>
-                                <a href="/admin/produtos/{{ $produto->id }}" class="btn btn-secondary">editar</a>
-                                <a href="/admin/produtos/excluir/{{ $produto->id }}" class="btn btn-danger">excluir</a>
+                                <a href="/admin/produtos/{{ $produto->id }}" class="btn">editar</a>
+                                <a href="/admin/produtos/excluir/{{ $produto->id }}" class="btn">excluir</a>
                             </td>
                         </tr>
                         @endforeach

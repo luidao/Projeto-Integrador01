@@ -62,7 +62,7 @@
                     <input type="file" id="imagem" name="imagem" accept="image/*" class="form-control" />
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary"> Enviar</button>
+                    <button type="submit" class="btn"> Enviar</button>
                 </div>
             </form>
             <div class="col-md-4">
@@ -74,7 +74,7 @@
 @else
 <section class="container mt-5">
     <div class="alert alert-danger mt-5">Produto não encontrado</div>
-    <a href="/admin" class="btn btn-primary">voltar</a>
+    <a href="/admin" class="btn">voltar</a>
 </section>
 @endif
 @stop

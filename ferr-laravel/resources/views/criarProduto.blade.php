@@ -64,7 +64,7 @@
                         <input type='file' id="imagem" name="imagem" accept="image/*" class="form-control" />
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary"> Enviar</button>
+                        <button type="submit" class="btn"> Enviar</button>
                     </div>
                 </form>
             </div>

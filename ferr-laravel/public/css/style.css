@@ -10,12 +10,42 @@
     --info: #fc751b;
 } */
 
+
+.page-link, .page-item.disabled{
+    border:none;
+    background-color: #252525;
+    color: #fc751b;
+}
+.page-item.active .page-link {
+    background-color: #fc751b;
+    color: black;
+  }
+
+#princi{
+    margin-top:100px;
+}
+
+.principal{
+
+}
+
+.laranj{
+    color:#fc751b;
+}
+
+.bannerCategoria:hover{
+    background-position: bottom;
+    transition:0.9s;
+}
+
 .banner1 {
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-image: url(/images/mtasferr.jpg);
     background-position: center;
+    
+    
 }
 .banner2 {
     height: 100vh;
@@ -68,11 +98,11 @@ header nav .navbar-brand img {
     height: 50px;
 }
 
-a.nav-link {
+a.anim {
     text-transform: uppercase;
     color: #fff !important;
 }
-a.nav-link:hover {
+a.anim:hover {
     text-transform: uppercase;
     color: #fff !important;
     border-bottom: 0.7px solid #fff;
