@@ -7,11 +7,13 @@ Sobre
 
 @section('content')
 
+<div class="princi" id="princi">
+
 <div class="container">
     <div class="jumbotron">
     <h2 class="aboutus-title">Sobre nós</h2>
     <p class="aboutus-text">Ferr é uma solução eficaz para quem busca aluguel de ferramentas, quaisquer que sejam, de forma fácil, rápida e totalmente online.</p>
-    <p class="aboutus-text">Sem longas filas de espera, preços exorbitantes e burocracia, a Ferr tem um extenso catálogo com tudo que você precisa para a sua obra, desde pinceis e utensílios de jardinagem até geradores e instrumentos para obra grossa.</p>
+    <p class="aboutus-text">Sem longas filas de espera, preços exorbitantes e burocracia, a Ferr tem um extenso catálogo com tudo que você precisa para a sua obra, desde pinceis e utensílios de jardinagem até instrumentos para obra grossa.</p>
     <a class="aboutus-more" href="#"></a>
 
 
@@ -23,6 +25,7 @@ Sobre
 
     <h4>Tracking</h4>
     <p>Oferecemos ferramentas para que o cliente possa fazer o tracking do equipamento solicitado, do início ao final da compra, possibilitando, também, a oportunidade de extensão do empréstimo.</p>
+</div>
 </div>
 </div>
 @include('layouts.footer')

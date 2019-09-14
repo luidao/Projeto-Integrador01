@@ -20,7 +20,7 @@ class CreateItemPedidoTable extends Migration
             $table->integer('quantidade');
             $table->timestamps();
             
-            $table->foreign('fk_produto')->references('id')->on('produto');
+            $table->foreign('fk_produto')->references('id_produto')->on('produto');
             $table->foreign('fk_pedido')->references('id')->on('pedido');
         });
     }

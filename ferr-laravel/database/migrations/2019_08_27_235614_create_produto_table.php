@@ -24,8 +24,8 @@ class CreateProdutoTable extends Migration
             $table->integer('quantidade');
             $table->timestamps();
 
-            $table->foreign('fk_categoria')->references('id')->on('categoria');
-            $table->foreign('fk_marca')->references('id')->on('marca');
+            $table->foreign('fk_categoria')->references('id_categoria')->on('categoria');
+            $table->foreign('fk_marca')->references('id_marca')->on('marca');
         });
     }
 

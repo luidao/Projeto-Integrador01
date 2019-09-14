@@ -21,10 +21,10 @@ class AdminController extends Controller
         $produtos = Produto::all();
         $categorias = Categoria::all();
         $marcas = Marca::all();
-
+        
         return view('admin', compact('produtos', 'categorias', 'marcas'));
     }
-
+    
     public function criarProduto(){
         $categorias = Categoria::all();
         $marcas = Marca::all();
@@ -35,7 +35,6 @@ class AdminController extends Controller
     public function insertProduto(Request $request){ // $_POST
         $produto = new Produto();
 
-        dd($request);
         $produto->nome = $request->nome;
         $produto->descricao = $request->descricao;
         $produto->fk_categoria = $request->categoria;
@@ -112,6 +111,6 @@ class AdminController extends Controller
         $nomeProduto = $produto->nome;
         $produto->delete();
 
-        return redirect('/admin')->with('mensagem', $nomeProduto .' excluido com sucesso');
+        return redirect('/admin')->with('mensagem', $nomeProduto ,' excluido com sucesso');
     }
 }
